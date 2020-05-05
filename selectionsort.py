@@ -3,9 +3,7 @@ def SelectionSort(list):
     while pivot < len(list):
         for index in range(pivot, len(list)):
             if list[index] < list[pivot]:
-                num1 = list[pivot]
-                num2 = list[index]
-                list[pivot], list[index] = num2, num1
+                list[pivot], list[index] = list[index], list[pivot]
         pivot += 1
 
 
